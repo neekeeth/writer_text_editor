@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_my_own_writer_FILE /Users/keith/projects/my_own_writer/build/Qt_6_7_3_for_macOS-Debug/my_own_writer.app/Contents/MacOS/my_own_writer)
+set(__QT_DEPLOY_TARGET_my_own_writer_TYPE EXECUTABLE)
