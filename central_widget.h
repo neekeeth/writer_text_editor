@@ -4,13 +4,12 @@
 #include <QWidget>
 #include <QMainWindow>
 #include <QGridLayout>
-#include <QTimer>
 #include "workplace.h"
 #include "bottom.h"
 
 
 class Central_widget: public QWidget {
-
+    Q_OBJECT
     QGridLayout* central_grid{};
     void make_grid();
     Workplace* my_workplace{};//most important to save this objects by this class-names insted of QWdiget*!!!

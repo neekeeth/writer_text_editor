@@ -2,20 +2,16 @@
 
 Central_widget::Central_widget(QMainWindow *in_parent) :
     QWidget {in_parent} {
+    qDebug() << "Central widget created";
     make_widgets();
     make_grid();
-    QTimer timer;
-
-    timer.start(1000);
-    QObject::connect(&timer, &QTimer::timeout, [this](){
-        this -> set_words_counter();
-    });
 }
 
 void Central_widget::make_widgets () {
     my_bottom = new Bottom(this);
     my_workplace = new Workplace(this);
 }
+
 void Central_widget::make_grid () {
     central_grid = new QGridLayout(this);
     this -> setLayout(central_grid);

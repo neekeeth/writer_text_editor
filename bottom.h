@@ -5,7 +5,6 @@
 #include <QDebug>
 #include <QHBoxLayout>
 #include <QLabel>
-#include <vector>
 #include <QDebug>
 
 class Bottom : public QWidget {
@@ -15,7 +14,9 @@ class Bottom : public QWidget {
     QLabel* page_number{};
     QLabel* words_counter{};
     void make_bottom_widgets();
-    std::vector<QWidget*> bottom_widgets; //just to make simple adding or deleting a widgets
+    //std::vector<QWidget*> bottom_widgets; //just to make simple adding or deleting a widgets
+    QString pages_decription = "Pages: ";
+    QString counter_decription = "Words: ";
 public:
     void change_word_counter (size_t in_counter);
     Bottom(QWidget *parent = nullptr);

@@ -24,6 +24,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         central_widget.h central_widget.cpp
+        workplace.h workplace.cpp
+        bottom.h bottom.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET my_own_writer APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
